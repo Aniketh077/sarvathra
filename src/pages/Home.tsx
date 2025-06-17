@@ -28,9 +28,9 @@ const Home = () => {
 
   return (
     <div className="pt-20">
-      {/* Hero Section - Simple Image Changes Only */}
+      {/* Hero Section - Improved Typography */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Background Image Carousel - No Animations */}
+        {/* Background Image Carousel */}
         <div className="absolute inset-0 z-0">
           <img
             src={images[currentImage].src}
@@ -50,118 +50,119 @@ const Home = () => {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-8">
+            {/* Left Content - Refined Typography */}
+            <div className="space-y-6">
               {/* Badge */}
-              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-                <Award className="w-5 h-5 text-yellow-400 mr-2" />
-                <span className="text-white font-medium">ISO 9001:2015 Certified</span>
+              <div className="inline-flex items-center px-3 py-1.5 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+                <Award className="w-4 h-4 text-yellow-400 mr-2" />
+                <span className="text-white text-sm font-medium">ISO 9001:2015 Certified</span>
               </div>
 
-              {/* Main Heading */}
-              <div className="space-y-4">
-                <div className="text-4xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
-                  SARVATRA INDUSTRIES (INDIA) PRIVATE LIMITED
-                </div>
+              {/* Main Heading - Smaller and More Elegant */}
+              <div className="space-y-3">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-tight">
+                  SARVATRA INDUSTRIES
+                </h1>
+                <p className="text-lg md:text-xl text-blue-200 font-medium">
+                  (INDIA) PRIVATE LIMITED
+                </p>
                 
-                
-                <h2 className="text-1xl md:text-3xl lg:text-5xl font-black text-white leading-tight">
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight">
                   <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
                     Engineering Excellence
-                    <br />
                   </span>
                 </h2>
               </div>
 
-              {/* Description */}
-              <p className="text-lg md:text-xl text-blue-100 leading-relaxed max-w-2xl">
+              {/* Description - Refined Size */}
+              <p className="text-base md:text-lg text-blue-100 leading-relaxed max-w-2xl">
                 Leading manufacturer of precision sheet metal components, gas stove parts, tools & dies, and motor stampings with over 30+ years of engineering excellence.
               </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* CTA Buttons - Smaller and More Refined */}
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   to="/machineries"
-                  className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-full hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                  className="group inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold rounded-full hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                 >
-                  <Factory className="mr-3 w-5 h-5" />
+                  <Factory className="mr-2 w-4 h-4" />
                   Explore Our Machineries
-                  <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 
                 <Link
                   to="/about"
-                  className="group inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-md text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300"
+                  className="group inline-flex items-center justify-center px-6 py-3 bg-white/10 backdrop-blur-md text-white text-sm font-semibold rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300"
                 >
                   Learn More
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
-            {/* Right Content - Stats Cards */}
-            <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
-                      <Award className="w-6 h-6 text-blue-300" />
+            {/* Right Content - Stats Cards with Smaller Text */}
+            <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center">
+                      <Award className="w-5 h-5 text-blue-300" />
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-white mb-1">100+</div>
-                  <div className="text-blue-200 text-sm">Products</div>
+                  <div className="text-2xl font-bold text-white mb-1">100+</div>
+                  <div className="text-blue-200 text-xs">Products</div>
                 </div>
 
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
-                      <Users className="w-6 h-6 text-green-300" />
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
+                      <Users className="w-5 h-5 text-green-300" />
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-white mb-1">30+</div>
-                  <div className="text-blue-200 text-sm">Years Experience</div>
+                  <div className="text-2xl font-bold text-white mb-1">30+</div>
+                  <div className="text-blue-200 text-xs">Years Experience</div>
                 </div>
 
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center">
-                      <Factory className="w-6 h-6 text-purple-300" />
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-purple-500/20 rounded-full flex items-center justify-center">
+                      <Factory className="w-5 h-5 text-purple-300" />
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-white mb-1">10000+</div>
-                  <div className="text-blue-200 text-sm">Projects Completed</div>
+                  <div className="text-2xl font-bold text-white mb-1">10000+</div>
+                  <div className="text-blue-200 text-xs">Projects Completed</div>
                 </div>
 
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-yellow-300" />
+                <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-center mb-2">
+                    <div className="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                      <Zap className="w-5 h-5 text-yellow-300" />
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-white mb-1">ISO</div>
-                  <div className="text-blue-200 text-sm">Certified</div>
+                  <div className="text-2xl font-bold text-white mb-1">ISO</div>
+                  <div className="text-blue-200 text-xs">Certified</div>
                 </div>
               </div>
 
-              {/* Feature Highlights */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-                <h3 className="text-white font-semibold mb-4">Why Choose Us?</h3>
-                <div className="space-y-3">
+              {/* Feature Highlights - Smaller Text */}
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20">
+                <h3 className="text-white font-semibold mb-3 text-base">Why Choose Us?</h3>
+                <div className="space-y-2">
                   <div className="flex items-center text-blue-100">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
-                    <span className="text-sm">Advanced Manufacturing Technology</span>
+                    <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></div>
+                    <span className="text-xs">Advanced Manufacturing Technology</span>
                   </div>
                   <div className="flex items-center text-blue-100">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mr-3"></div>
-                    <span className="text-sm">ISO 9001:2015 Quality Standards</span>
+                    <div className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2"></div>
+                    <span className="text-xs">ISO 9001:2015 Quality Standards</span>
                   </div>
                   <div className="flex items-center text-blue-100">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
-                    <span className="text-sm">On-Time Delivery Guarantee</span>
+                    <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-2"></div>
+                    <span className="text-xs">On-Time Delivery Guarantee</span>
                   </div>
                   <div className="flex items-center text-blue-100">
-                    <div className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></div>
-                    <span className="text-sm">Custom Engineering Solutions</span>
+                    <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-2"></div>
+                    <span className="text-xs">Custom Engineering Solutions</span>
                   </div>
                 </div>
               </div>
@@ -170,10 +171,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Welcome Section */}
-      <section className="py-20 bg-white">
+      {/* Welcome Section - Improved Typography */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="relative">
               <img
                 src="./assets/company image.jpg"
@@ -183,17 +184,17 @@ const Home = () => {
               />
             </div>
 
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <div className="space-y-5">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
                 WELCOME TO SARVATRA INDUSTRIES (INDIA) PRIVATE LIMITED
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-base text-gray-600 leading-relaxed">
                 M/s Sarvatra Industries is a professionally managed company mentored by Mr. Ompal Sharma and Mr. Dharmender Sharma
               </p>
-              <p className="text-gray-600">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 We have a team of qualified and skilled manpower. We believe in quality & maintain a perfect balance between quality and quantity.
               </p>
-              <ul className="space-y-4 text-gray-600">
+              <ul className="space-y-3 text-sm text-gray-600">
                 <li>• Established Sarvatra Industries in Dec. 2009 as partnership firm with Two Power Press, One Surface Grinder & Two ARC Welding Machine.</li>
                 <li>• Engage in the business of Auto Parts, Fabrication Parts, Cook top Parts and various types of Sheet Metal components.</li>
                 <li>• We have in house Tool Room with all the Latest Machines & manufacture Tools & fixtures for Sheet Metal components.</li>
@@ -202,87 +203,87 @@ const Home = () => {
               </ul>
               <Link
                 to="/about"
-                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm"
               >
                 Read More
-                <ArrowRight className="ml-2" size={16} />
+                <ArrowRight className="ml-2" size={14} />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quality Facilities Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Quality Facilities Section - Refined Typography */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quality Facilities & Instruments</h2>
-            <p className="text-lg text-gray-600">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Quality Facilities & Instruments</h2>
+            <p className="text-base text-gray-600">
               Our state-of-the-art quality control equipment ensures precision and excellence
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Measurement Instruments</h3>
-              <div className="grid grid-cols-2 gap-6">
-                <ul className="space-y-4 text-gray-600">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-5">Measurement Instruments</h3>
+              <div className="grid grid-cols-2 gap-5">
+                <ul className="space-y-3 text-sm text-gray-600">
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Digital Height Gauge
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Digital Varnier Caliper
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Digital Micro Meter
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Bevel Protecter
                   </li>
                 </ul>
-                <ul className="space-y-4 text-gray-600">
+                <ul className="space-y-3 text-sm text-gray-600">
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Filler Gauge
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Surface Plate
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Dft Meter
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
                     Bore Gauze
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Certifications</h3>
-              <div className="grid grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-5">Certifications</h3>
+              <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <h4 className="font-semibold text-gray-900 mb-4">Certification ISO</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3 text-sm">Certification ISO</h4>
                   <img
                     src="/assets/iso.webp"
                     alt="ISO 9001:2015 Certification"
-                    className="mx-auto h-32 object-contain"
+                    className="mx-auto h-24 object-contain"
                     loading="lazy"
                   />
                 </div>
                 <div className="text-center">
-                  <h4 className="font-semibold text-gray-900 mb-4">Certification BIS</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3 text-sm">Certification BIS</h4>
                   <img
                     src="/assets/bis.png"
                     alt="Bureau of Indian Standards Certification"
-                    className="mx-auto h-32 object-contain"
+                    className="mx-auto h-24 object-contain"
                     loading="lazy"
                   />
                 </div>
@@ -292,17 +293,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Facilities Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Facilities Section - Refined Typography */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Facilities</h2>
-            <p className="text-lg text-gray-600">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Our Facilities</h2>
+            <p className="text-base text-gray-600">
               State-of-the-art manufacturing facilities equipped with advanced machinery
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "Press Shop",
@@ -333,7 +334,7 @@ const Home = () => {
                 key={index}
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="relative h-48">
+                <div className="relative h-40">
                   <img
                     src={facility.image}
                     alt={facility.title}
@@ -341,15 +342,15 @@ const Home = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{facility.title}</h3>
-                  <p className="text-gray-600 mb-4">{facility.description}</p>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{facility.title}</h3>
+                  <p className="text-sm text-gray-600 mb-3 leading-relaxed">{facility.description}</p>
                   <Link
                     to={facility.link}
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
+                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm"
                   >
                     Learn More
-                    <ArrowRight className="ml-2" size={16} />
+                    <ArrowRight className="ml-1" size={14} />
                   </Link>
                 </div>
               </div>
@@ -358,72 +359,21 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Products Section */}
-      <section className="py-20 bg-white">
+      {/* Products Section - Refined Typography */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">We Provide</h2>
-            <p className="text-lg text-gray-600">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">We Provide</h2>
+            <p className="text-base text-gray-600">
               Delivering excellence through precision engineering and quality manufacturing
             </p>
           </div>
 
-          {/* Product Gallery  
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="/assets/press-4.jpg"
-                alt="Sheet Metal Components"
-                className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                <p className="text-white font-semibold">Tool Room</p>
-              </div>
-            </div>
-
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="/assets/press-1.jpg"
-                alt="Gas Stove Parts"
-                className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                <p className="text-white font-semibold">Press Shop</p>
-              </div>
-            </div>  
-
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="/assets/press-2.jpg"
-                alt="Tools and Dies"
-                className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                <p className="text-white font-semibold">Tool Room</p>
-              </div>
-            </div>    
-
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
-              <img
-                src="/assets/press-3.jpg"
-                alt="Fabrication Services"
-                className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
-                <p className="text-white font-semibold">Tool Room</p>
-              </div>
-            </div>
-          </div>   */}
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
                 title: "Fabrication Services",
-                description: "We are offering world-class fabrication services for various types of industrial components. These services are backed by qualified engineers and technical staff who are well-versed with the latest computer modeling,",
+                description: "We are offering world-class fabrication services for various types of industrial components. These services are backed by qualified engineers and technical staff who are well-versed with the latest computer modeling.",
                 bgColor: "bg-emerald-600",
                 image: "/assets/fabrication.jpg",
                 link: "/products/fabrication-services"
@@ -452,19 +402,19 @@ const Home = () => {
             ].map((product, index) => (
               <div
                 key={index}
-                className={`${product.bgColor} rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1`}
+                className={`${product.bgColor} rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1`}
               >
-                <div className="p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-4">{product.title}</h3>
-                  <p className="text-white/90 mb-6 leading-relaxed">
+                <div className="p-6 text-white">
+                  <h3 className="text-xl font-bold mb-3">{product.title}</h3>
+                  <p className="text-white/90 mb-4 leading-relaxed text-sm">
                     {product.description}
                   </p>
                   <Link
                     to={product.link}
-                    className="inline-flex items-center text-white border border-white/30 px-6 py-2 rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300"
+                    className="inline-flex items-center text-white border border-white/30 px-4 py-2 rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 text-sm"
                   >
                     Learn More
-                    <ArrowRight className="ml-2" size={16} />
+                    <ArrowRight className="ml-2" size={14} />
                   </Link>
                 </div>
               </div>
@@ -473,10 +423,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Overview Section */}
-      <section className="py-20 bg-white">
+      {/* Overview Section - Refined Typography */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
                 title: "Machineries",
@@ -491,16 +441,16 @@ const Home = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300"
+                className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
               >
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">{item.title}</h3>
-                <p className="text-gray-600 mb-4">{item.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-sm text-gray-600 mb-3">{item.description}</p>
                 <Link
                   to={item.link}
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-700 text-sm"
                 >
                   Learn More
-                  <ArrowRight className="ml-2" size={16} />
+                  <ArrowRight className="ml-2" size={14} />
                 </Link>
               </div>
             ))}

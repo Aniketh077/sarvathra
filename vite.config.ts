@@ -17,5 +17,13 @@ export default defineConfig({
       }
     }
   },
-  publicDir: 'public'
+  publicDir: 'public',
+  server: {
+    historyApiFallback: true,
+  },
+  preview: {
+    port: 4173,
+    strictPort: true,
+    host: true
+  }
 });

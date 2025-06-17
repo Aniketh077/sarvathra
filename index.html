@@ -9,9 +9,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Additional meta tags for better SEO and social sharing -->
+    <meta property="og:title" content="Sarvatra Industries - Engineering Excellence" />
+    <meta property="og:description" content="Leading manufacturer of sheet metal components, gas stove parts, tools & dies, and motor stampings." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sarvatraindustries.com" />
+    <meta property="og:image" content="./assets/logo.png" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sarvatra Industries - Engineering Excellence" />
+    <meta name="twitter:description" content="Leading manufacturer of sheet metal components, gas stove parts, tools & dies, and motor stampings." />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sarvatraindustries.com" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./assets/logo.png" as="image" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
+    
+    <!-- Fallback script for routing issues -->
+    <script>
+      // Handle client-side routing fallback
+      if (window.location.pathname !== '/' && !window.location.pathname.startsWith('/assets/')) {
+        // Store the intended path
+        sessionStorage.setItem('intendedPath', window.location.pathname + window.location.search);
+      }
+    </script>
   </body>
 </html>

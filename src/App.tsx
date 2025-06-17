@@ -91,7 +91,7 @@ function App() {
                 <Route path="/products/tools-and-fixtures" element={<ToolsAndFixtures />} />
                 <Route path="/products/gas-and-cooktop-parts" element={<GasCooktopParts />} />
                 <Route path="/machineries" element={<Machineries />} />
-                {/* Catch-all route for 404s */}
+                {/* Catch-all route that redirects to the intended page or home */}
                 <Route path="*" element={<Home />} />
               </Routes>
             </main>

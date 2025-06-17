@@ -223,7 +223,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-semibold text-gray-900 mb-5">Measurement Instruments</h3>
               <div className="grid grid-cols-2 gap-5">
@@ -293,9 +293,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Facilities Section - Removed Extra Padding */}
-      <section className="pb-100 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Facilities Section - No Top Padding */}
+      <section className="bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Our Facilities</h2>
             <p className="text-base text-gray-600">
